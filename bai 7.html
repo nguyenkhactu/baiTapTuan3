@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [
+        [1,2,3,4,5,6,],
+        [1,2,3,4,5,6],
+        [1,2,3,4,5,6]
+    ];
+
+    for (let i =0;i< array.length;i++){
+        let max = array[i][0];
+        for (let j = 0 ; j < array[i].length;j++)
+        if (max <= array[i][j]){
+            max = array[i][j];
+        }
+        document.write("số lớn nhất của cột" + (i +1) + "là"+ max+ "<br/>")
+    }
+</script>
+
+</body>
+</html>

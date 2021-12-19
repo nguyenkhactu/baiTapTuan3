@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tổng các phần tử trong 1 hàng và hiển thị tổng của từng hàng</title>
+</head>
+<body>
+<script>
+    let array = [
+        [1,2,3,4,5,6,],
+        [1,2,3,4,5,6],
+        [1,2,3,4,4,5]];
+    let total = 0;
+    for (let i = 0;i < array.length;i++){
+        for ( let j = 0;j < array[i].length;j++){
+            total += array[i][j];
+        }document.write("tổng mảng" + (i+1) + "là " + total +
+        "<br/>")
+    }
+</script>
+
+</body>
+</html>
